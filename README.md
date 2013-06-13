@@ -24,19 +24,19 @@ Look the following to see a working example
 ## Setup
 - link to urlswitchr.js in your HTML
 
-'''html
+```html
 <script src="urlswitchr.js"></script>
-'''
+```
 
 - Define the plugin on page load
 
-'''javascript
+```javascript
 	$("a[href]").urlswitchr({
     	devDomain: 'testsite',
     	devUrl: 'dev.yoursite',
     	prodUrl: 'yoursite'
     });
-'''
+```
 
 devDomain
 - Your QA/Development Environment domain
