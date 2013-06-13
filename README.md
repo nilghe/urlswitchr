@@ -10,11 +10,15 @@ QA Environment URL:
   http://yourapp-qa
 
 href tags within your application page
-  <a href="http://companypayroll">Payroll</a>
+```html
+<a href="http://companypayroll">Payroll</a>
+```
 
 Setting URLSwitchr to look for "-qa" in the URL will then switch the links to the specified testing/qa url
 
-  <a href="http://companypayroll-qa">Payroll</a>
+```html
+<a href="http://companypayroll-qa">Payroll</a>
+```
 
 ## Working Example
 Look the following to see a working example
@@ -22,13 +26,13 @@ Look the following to see a working example
 - /testsite/index.html
 
 ## Setup
-- link to urlswitchr.js in your HTML
+Link to urlswitchr.js in your HTML
 
 ```html
 <script src="urlswitchr.js"></script>
 ```
 
-- Define the plugin on page load
+Define the plugin on page load
 
 ```javascript
 	$("a[href]").urlswitchr({
@@ -38,14 +42,9 @@ Look the following to see a working example
     });
 ```
 
-devDomain
-- Your QA/Development Environment domain
-
-devURL
-- The development URL you wish to replace the produciton URL with
-
-prodUrl 
-- The production URL you wish to find to replace with devURL
+- devDomain: Your QA/Development Environment domain
+- devURL: The development URL you wish to replace the produciton URL with
+- prodUrl: The production URL you wish to find to replace with devURL
 
 ## Limitations
 You will have to setup multiple definitions in your jQuery file if you wish replace multiple urls that match different domains.
